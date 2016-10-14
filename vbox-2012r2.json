@@ -35,7 +35,10 @@
         "scripts/package.ps1",
         "scripts/SetupComplete-2012.cmd",
         "scripts/Test-Command.ps1"
-      ]
+      ],
+      "vboxmanage_post": [
+        [ "storageattach", "{{.Name}}", "--storagectl", "IDE Controller", "--port", "1", "--device", "0", "--medium", "none" ]
+      ]      
     },
     {
       "name": "virtualbox-iso-atlas",
