@@ -6,7 +6,7 @@
       "iso_url": "{{ user `iso_url` }}",
       "iso_checksum": "{{ user `iso_checksum` }}",
       "iso_checksum_type": "md5",
-      "ram_size_mb": 2048,
+      "ram_size": 2048,
       "vm_name": "2016min",
       "communicator": "winrm",
       "winrm_username": "vagrant",
@@ -14,7 +14,7 @@
       "winrm_timeout": "12h",
       "shutdown_command": "C:/Windows/Panther/Unattend/packer_shutdown.bat",
       "shutdown_timeout": "15m",
-      "switch_name": "internal_switch",
+      "switch_name": "Packer",
       "floppy_files": [
         "answer_files/2016/Autounattend.xml",
         "scripts/winrm.ps1"

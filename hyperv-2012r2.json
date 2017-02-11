@@ -3,7 +3,7 @@
     {
       "type": "hyperv-iso",
       "guest_additions_mode": "disable",
-      "ram_size_mb": 2048,
+      "ram_size": 2048,
       "iso_url": "{{ user `iso_url` }}",
       "iso_checksum": "{{ user `iso_checksum` }}",
       "iso_checksum_type": "sha1",
@@ -13,7 +13,7 @@
       "winrm_timeout": "12h",
       "shutdown_command": "a:/PackerShutdown.bat",
       "shutdown_timeout": "15m",
-      "switch_name": "internal_switch",
+      "switch_name": "Packer",
       "floppy_files": [
         "answer_files/2012_r2{{user `core`}}/Autounattend.xml",
         "scripts/postunattend.xml",
